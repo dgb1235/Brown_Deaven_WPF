@@ -38,3 +38,15 @@ var total = weeklyTotals[0] + weeklyTotals[1] + weeklyTotals[2] + weeklyTotals[3
 var average = total / 5;
 // Log results to console
 console.log("You have spent a total of $" + total + " on groceries over 5 weeks. That is an average of $" + average + " per week.");
+
+// Discounts
+// Givens
+var originalPrice = 1322.99;
+var discount = 25;
+var itemName = "gold plated cell phone case";
+var tax = 6;
+// Item price with and without tax after discount
+var discountPrice = originalPrice - originalPrice / discount;
+var discountWithTax = discountPrice * tax / 100 + discountPrice;
+// Log string to console
+console.log("Your " + itemName + " was originally $" + originalPrice + ", but after a " + discount + "% discount, it is now $" + discountPrice + " without tax, and $" + discountWithTax + " with tax.");
