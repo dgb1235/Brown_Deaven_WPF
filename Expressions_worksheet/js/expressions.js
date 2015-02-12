@@ -46,7 +46,7 @@ var discount = 25;
 var itemName = "gold plated cell phone case";
 var tax = 6;
 // Item price with and without tax after discount
-var discountPrice = originalPrice - originalPrice / discount;
+var discountPrice = originalPrice - originalPrice * discount / 100;
 var discountWithTax = discountPrice * tax / 100 + discountPrice;
 // Log string to console
 console.log("Your " + itemName + " was originally $" + originalPrice + ", but after a " + discount + "% discount, it is now $" + discountPrice + " without tax, and $" + discountWithTax + " with tax.");

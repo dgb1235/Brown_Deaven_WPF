@@ -27,8 +27,8 @@
       <file leaf-file-name="expressions.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/expressions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7303371" vertical-offset="410" max-vertical-offset="855">
-              <caret line="49" column="64" selection-start-line="49" selection-start-column="64" selection-end-line="49" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.76404494" vertical-offset="410" max-vertical-offset="855">
+              <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -234,8 +234,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/expressions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7303371" vertical-offset="410" max-vertical-offset="855">
-          <caret line="49" column="64" selection-start-line="49" selection-start-column="64" selection-end-line="49" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.76404494" vertical-offset="410" max-vertical-offset="855">
+          <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
