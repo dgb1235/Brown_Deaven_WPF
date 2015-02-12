@@ -4,7 +4,7 @@
 
 //Let the user decide how many employees Tony has
 var employees = prompt("How many employees (10+) does Tony have?");
-//50% make pizza, 30% roll dough, 10 percent wait tables, the rest
+//50% make pizza, 30% roll dough, 10 percent wait tables, the rest wash dishes
 var makingPizza = employees / 2;
 var rollingDough = employees * 3 / 10;
 var waitingTables = employees / 10;
