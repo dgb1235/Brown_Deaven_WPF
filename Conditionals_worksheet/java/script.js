@@ -48,3 +48,23 @@ the username or password matched. Doing this delivers a result no matter the con
 and still fulfills the requirement of logging if the username does not match and the pass does.
 */
 
+//Movie Ticket Price
+//Givens
+//Prompt for what time the user wants to see the movie and their age
+var movieTime = prompt('What time would you like to see your movie?');
+var userAge = prompt('Pardon me, what is your age?');
+//Make variable holding ticket prices. Not needed, but I'll do it just because
+var fullPrice = "$12.00";
+var discountPrice = "7.00";
+//if the users age is greater than or equal to 55
+if(userAge >= 55){
+    console.log("You are eligible for the senior citizen discount. The ticket price is " + discountPrice + ".");
+}
+//if the users age is not greater than or equal to 55, but the movie time falls between 3 and 5 o'clock
+else if(movieTime >= 3 && movieTime <= 5){
+    console.log("Your movie time falls between 3 and 5 o'clock. The ticket price is " + discountPrice + ".");
+}
+//If the users age is less than 55 and the movie does not fall between 3 and 5 o'clock
+else{
+    console.log("There are no discounts for that time. The ticket price is " + fullPrice + ".");
+}
