@@ -12,7 +12,7 @@ var gallonsLeft = tankCapacity * gaugeReading;
 var milesLeft = gallonsLeft * gasEfficiency;
 //if the amount of miles left is greater than or equal to 200
 if(milesLeft >= 200){
-    console.log("Yes, you can make it without stopping for gas");
+    console.log("Yes, you can make it without stopping for gas.");
 }
 //if the amount of miles left is less than 200
 else{
@@ -55,7 +55,7 @@ var movieTime = prompt('What time would you like to see your movie?');
 var userAge = prompt('Pardon me, what is your age?');
 //Make variable holding ticket prices. Not needed, but I'll do it just because
 var fullPrice = "$12.00";
-var discountPrice = "7.00";
+var discountPrice = "$7.00";
 //if the users age is greater than or equal to 55
 if(userAge >= 55){
     console.log("You are eligible for the senior citizen discount. The ticket price is " + discountPrice + ".");
