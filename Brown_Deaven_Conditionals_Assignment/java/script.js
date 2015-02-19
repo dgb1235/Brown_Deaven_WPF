@@ -5,7 +5,7 @@
 //Create our variables with prompts
 var userNetIncome = prompt("This is a monthly spending calculator; what is your average take-home salary per month?");
 var userBills = prompt("How much do you owe in bills each month?");
-var userSavings = prompt("Do you do have a savings account, yes? If no leave blank");
+var userSavings = prompt("You do have a savings account, yes? If no leave blank");
 var savingsInterest = prompt("If you have a savings account, what is the yearly interest rate? (whole number)") / 100;
 var percentToSavings = prompt("Final question, what percent of your left over money do you / would you put into your savings account?");
 var savingsPercent = percentToSavings / 100;
@@ -22,7 +22,7 @@ if(madeInSavings > 25){
 }
 //If your savings account will make more than 5 dollars per month
 else if(madeInSavings > 5){
-    console.log("Having a savings account can;t hurt you. It's an extra $" + madeInSavings + " per month.");
+    console.log("Having a savings account can't hurt you. It's an extra $" + madeInSavings + " per month.");
 }
 //If your savings account will make less than 5 dollars per month
 else{
