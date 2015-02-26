@@ -14,9 +14,9 @@ console.log("The circumference of the circle is " + circumference + ".");
 
 //Stung!
 var weight = 450;
-var stings = calculate(weight);
+var stings = multiply(weight);
 
-function calculate(weight){
+function multiply(weight){
     return 8.666666667 * weight;
 }
 
