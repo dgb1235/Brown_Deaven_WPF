@@ -20,4 +20,4 @@ function multiply(weight){
     return 8.666666667 * weight;
 }
 
-console.log("It takes " + stings + " bee stings to kill this animal");
+console.log("It takes " + stings + " bee stings to kill this animal.");
