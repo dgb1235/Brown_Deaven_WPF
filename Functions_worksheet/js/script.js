@@ -11,3 +11,13 @@ function calculate(radius){
 }
 
 console.log("The circumference of the circle is " + circumference + ".");
+
+//Stung!
+var weight = 450;
+var stings = calculate(weight);
+
+function calculate(weight){
+    return 8.666666667 * weight;
+}
+
+console.log("It takes " + stings + " bee stings to kill this animal");
