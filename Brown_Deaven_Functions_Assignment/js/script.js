@@ -4,7 +4,7 @@
 
 //Ask user which lottery numbers they would like to see
 var userChoice = prompt("Would you like to see the numbers for the Florida lottery or for the PowerBall?");
-//make variables to hold the randomly generated numbers
+//Make variables to hold the randomly generated numbers
 var one = number();
 var two = number();
 var three = number();
@@ -28,11 +28,12 @@ function makeSure(choice) {
         //Increase tries by one each time this loop is ran to act as a counter
         tries = tries + 1;
     }
-    //return the value of choice
+    //Return the value of choice
     return choice;
 }
 //If the user wants to see the results of the Powerball (modified for grammatical errors)
 if (userChoice === "PowerBall" || userChoice === "powerball" || userChoice === "Powerball") {
+    //Create a function that will produce a random number between 1 and 59
     function number() {
         var random = Math.round(Math.random() * 59);
         return random;
@@ -41,22 +42,24 @@ if (userChoice === "PowerBall" || userChoice === "powerball" || userChoice === "
     //Made a function for the PowerBall number so that it's value cannot be greater than 35.
     function power() {
         var random = Math.round(Math.random() * 35);
+        //Return the value
         return random;
     }
+    //Log in the console the winning numbers
     console.log("The winning numbers for tonight's PowerBall are " + one + ", " + two + ", " + three + ", " + four + ", " + five + ", and your winning PowerBall number is " + powerBall + ". Thank you for playing!");
 }
 //If the user wants to see the results of the Florida lottery
 else if (userChoice === "Florida lottery" || userChoice === "Florida" || userChoice === "florida lottery"){
+    //Made a function for the florida lottery so that it's value cannot be greater than 53
     function number() {
         var random = Math.round(Math.random() * 53);
+        //Return the value
         return random;
     }
-
+    //Log in the console the winning numbers
     console.log("The winning numbers for tonight's Florida lottery are " + one + ", " + two + ", " + three + ", " + four + ", " + five + ", and " + six + ". Thank you for playing!");
 }
 //Set userChoice equal to choice in the event the user did not enter anything the first time
 userChoice = makeSure(userChoice);
 //Run function
 makeSure();
-
-
