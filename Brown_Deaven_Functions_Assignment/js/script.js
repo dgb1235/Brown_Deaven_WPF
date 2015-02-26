@@ -22,33 +22,44 @@ function makeSure(choice) {
     //Return the value of choice
     return choice;
 }
+//Make a function to get random numbers
 function num(min, max){
+    //Build an array to house the numbers given by the function
     var randomArray = [];
-
+    //Create a loop that gives us six random numbers
     for (var i = 0; i < 6; i++) {
-
+        //Create the formula to find a random number
         var r = Math.random() * (max - min) + min;
+        //Round the random number to the nearest whole number
         r = Math.round(r);
+        //Set the value of randomArray equal to each of the output values of r
         randomArray[i] = r;
     }
+    //Return the value of randomArray
     return randomArray;
 }
-
-
 //If the user wants to see the results of the PowerBall (modified for grammatical errors)
 if (userChoice === "PowerBall" || userChoice === "powerball" || userChoice === "Powerball") {
-    //Create a function that will produce a random number between 1 and 59
+    //Create variable using the above function to get a random number between 1 and 59
     var numbers = num(1, 59);
-    //Made a function for the PowerBall number so that it's value cannot be greater than 35.
+    //Create variable using the above function to get a random number between 35
     var powerBall = num(1, 35);
-    //Log in the console the winning numbers
+    //If any numbers match get new numbers
+    if (numbers [0] === numbers [1] || numbers [0] === numbers [2] || numbers [0] === numbers[3] || numbers[0] === numbers[4] || numbers [1] === numbers [2] || numbers [1] === numbers [3] || numbers [1] === numbers[4] || numbers [2] === numbers [3] || numbers [2] === numbers [4] || numbers [3] === numbers [4]){
+        num(1, 59);
+    }
+    //Log in the console the winning numbers using the first 5 numbers of the array
     console.log("The winning numbers for tonight's PowerBall are " + numbers [0] + ", " + numbers [1] + ", " + numbers[2] + ", " + numbers [3] + ", " + numbers [4] + ", and your winning PowerBall number is " + powerBall [0]+ ". Thank you for playing!");
 }
 //If the user wants to see the results of the Florida lottery
 else if (userChoice === "Florida lottery" || userChoice === "Florida" || userChoice === "florida lottery"){
-    //Made a function for the florida lottery so that it's value cannot be greater than 53
+    //Create variable using the above function to get a random number between 1 and 53
     var florida = num(1, 53);
-    //Log in the console the winning numbers
+    //If any of the numbers match get new numbers
+    if (florida [0] === florida [1] || florida [0] === florida [2] || florida [0] === florida[3] || florida[0] === florida[4] || florida[0] === florida[5] || florida [1] === florida [2] || florida [1] === florida [3] || florida [1] === florida[4] || florida[1] === florida[5] || florida [2] === florida [3] || florida [2] === florida [4] || florida [2] === florida[5] || florida [3] === florida [4] || florida[3] === florida [5] || florida [4] === florida [5]){
+        num(1, 53);
+    }
+    //Log in the console the winning numbers using all of the numbers of the array
     console.log("The winning numbers for tonight's Florida lottery are " + florida + ". Thank you for playing!");
 }
 //Set userChoice equal to choice in the event the user did not enter anything the first time
