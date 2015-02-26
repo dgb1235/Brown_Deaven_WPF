@@ -10,4 +10,4 @@ function calculate(radius){
     return 3.14 * (2 * radius);
 }
 
-console.log("If the radius of a circle is " + radius + " inches, the circumference of the circle is " + circumference + " inches.");
+console.log("The circumference of the circle is " + circumference + ".");
